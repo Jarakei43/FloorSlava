@@ -230,12 +230,9 @@ function createGame() {
   let h = 0;
   updateTimer();
 
-  // Запускаем новый таймер
   timerInterval = setInterval(() => {
-    // Определяем скорость лавы
     if (time > 120) {
-      // Если время изначально 240
-      change = 0.5; // (примерная логика, подстрой под свою высоту экрана)
+      change = 0.5; 
     } else {
       change = 1;
     }
@@ -251,75 +248,3 @@ function createGame() {
   }, 1000);
 }
 
-// function createGame() {
-//   correct = false;
-//   let randInt = Math.floor(Math.random() * 10);
-//   current = randInt;
-//   numbers.push(randInt);
-//   conditions.innerHTML = "";
-//   conditions.innerHTML += `
-//                         <div class="encode"><div>${hillCilpherData[randInt].encoded}</div></div>
-//                         <div class="key__mat">
-//                             <div class="key__mat_img">
-//                                 <img src="${hillCilpherData[randInt].image}" alt="matrix">
-//                             </div>
-//                         </div>`;
-
-//   lvlShow.innerHTML = `<h1>Level: ${lvl}</h1>`;
-//   hillCilpherData[randInt].keyMatrix[0].length === 2
-//     ? (time = 120)
-//     : (time = 240);
-
-//   let change = 0;
-//   let h = 0;
-
-//   setInterval(() => {
-//     if (time == 120) {
-//       change = 1;
-//     } else if (time == 240) {
-//       change = 0.5;
-//     }
-//     if (time > 0) {
-//       time--;
-//       h += change;
-//       lava.style.height = `${h}px`;
-//       updateTimer();
-//     } else {
-//       location.href = "../score/score.html";
-//     }
-//   }, 1000);
-// }
-
-// const randInt = Math.floor(Math.random() * 10);
-// numbers.push(randInt);
-
-// conditions.innerHTML += `
-//                         <div class="encode"><div>${hillCilpherData[randInt].encoded}</div></div>
-//                         <div class="key__mat">
-//                             <div class="key__mat_img">
-//                                 <img src="${hillCilpherData[randInt].image}" alt="matrix">
-//                             </div>
-//                         </div>`;
-
-// hillCilpherData[randInt].keyMatrix[0].length === 2
-//   ? (time = 120)
-//   : (time = 240);
-
-// let change = 0;
-// let h = 0;
-
-// setInterval(() => {
-//   if (time == 120) {
-//     change = 1;
-//   } else if (time == 240) {
-//     change = 0.5;
-//   }
-//   if (time > 0) {
-//     time--;
-//     h += change;
-//     lava.style.height = `${h}px`;
-//     updateTimer();
-//   } else {
-//     location.href = "../score/score.html";
-//   }
-// }, 1000);
