@@ -1,0 +1,174 @@
+/* @import url('../../style.css'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header__play {
+  display: flex;
+  padding: 15px 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 40%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.play__name {
+  cursor: pointer;
+  font-size: 35px;
+  color: #d30ad7;
+}
+
+#timer {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.lava img {
+  position: absolute;
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+}
+
+.char__block {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.char__block-container {
+  position: relative;
+}
+
+.char__block-stolb {
+  position: absolute;
+  height: 120px;
+  z-index: 10;
+  bottom: 0;
+}
+
+.char__play {
+  position: absolute;
+  bottom: 114px;
+  height: 80px;
+  left: 0;
+}
+
+.conditions {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.key__mat {
+  background: #cbc199;
+  height: 100px;
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  border: 10px dashed #808080;
+  border-radius: 60px;
+}
+
+.encode {
+  width: 53%;
+  background: #cbc199;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px dashed #808080;
+  border-radius: 60px;
+}
+
+.encode div {
+  font-size: 25px;
+}
+
+.modal__sumbit {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  gap: 50px;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  background: #808080;
+  border: 5px solid #000;
+  z-index: 20;
+  padding: 15px 15px;
+}
+
+.modal__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 160px;
+}
+
+.modal__title {
+  font-size: 30px;
+}
+
+.modal__alphabet img {
+  width: 100%;
+}
+
+.modal__escape {
+  cursor: pointer;
+}
+
+.modal__form {
+  height: 100px;
+  width: 70%;
+  border: 5px solid #000;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+
+.modal__input {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.modal__alphabet {
+  margin-top: 50px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.lvl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__btn {
+    border-radius: 10px;
+    padding: 5px 5px;
+    font-size: 15px;
+    cursor: pointer;
+}

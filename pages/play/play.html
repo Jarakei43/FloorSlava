@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../../images/lava.png">
+    <link rel="stylesheet" href="../../style.css" />
+    <title>Play Zone</title>
+  </head>
+  <body>
+    <header class="header__play">
+      <div class="logo"><img src="../../images/logo.png" alt="Logo" /></div>
+      <div class="play__name"></div>
+    </header>
+    <p id="timer">00:00</p>
+    <div class="conditions"></div>
+    <div class="lvl"></div>
+    <div class="char__block">
+      <div class="char__block-container">
+        <img
+          src="../../images/stolb.png"
+          alt="stolbMario"
+          class="char__block-stolb"
+        />
+      </div>
+    </div>
+    <div class="lava">
+      <img
+        src="../../images/lavalava.jpg"
+        alt="lavalavamatshalava"
+        class="lava__img"
+      />
+    </div>
+    <div class="modal__sumbit">
+      <div class="modal__top">
+        <h2 class="modal__title">Answer sheet</h2>
+        <div class="modal__escape">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z"
+              fill="#000"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <form action="" class="modal__form">
+        <input type="text" class="modal__input" placeholder="Your answer" />
+        <button class="modal__btn">Submit</button>
+      </form>
+      <div class="modal__alphabet">
+        <img src="../../images/alphabet.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="play.js"></script>
