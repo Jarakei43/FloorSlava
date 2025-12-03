@@ -116,7 +116,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 160px;
+  margin-bottom: 60px;
 }
 
 .modal__title {
@@ -174,5 +174,6 @@
     cursor: pointer;
 
 }
+
 
 
