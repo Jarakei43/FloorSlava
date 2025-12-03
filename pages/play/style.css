@@ -148,6 +148,7 @@
   background: transparent;
   border: none;
   outline: none;
+  max-width: 60px;
 }
 
 .modal__alphabet {
@@ -171,4 +172,5 @@
     padding: 5px 5px;
     font-size: 15px;
     cursor: pointer;
+
 }
