@@ -152,15 +152,13 @@ function checkAnswer() {
   const userAnswer = answer.value.trim().toLowerCase(); 
   const correctWord = hillCilpherData[current].word;
 
-  console.log("Введено:", userAnswer, "Ожидается:", correctWord);
-
   if (userAnswer === correctWord) {
     lvl++;
     score++;
     answer.value = "";
     modal.style.display = "none";
     if (lvl > 5) {
-      endGameAndRedirect();
+        endGameAndRedirect()
     }
     createGame();
   }
@@ -183,7 +181,6 @@ function endGameAndRedirect() {
     sessionStorage.setItem("gameResult", JSON.stringify({
         score: score, 
         lvl: lvl,
-        name: parse ? parse.name : 'Гость',
     })); 
 
     location.href = "../score/score.html";
@@ -232,7 +229,7 @@ function createGame() {
 
   timerInterval = setInterval(() => {
     if (time > 120) {
-      change = 0.5; 
+      change = 0.5;
     } else {
       change = 1;
     }
@@ -247,5 +244,3 @@ function createGame() {
     }
   }, 1000);
 }
-
-
