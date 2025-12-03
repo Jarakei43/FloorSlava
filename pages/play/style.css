@@ -137,7 +137,7 @@
   border: 5px solid #000;
   border-radius: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 0 auto;
   background: #fff;
@@ -174,4 +174,5 @@
     cursor: pointer;
 
 }
+
 
