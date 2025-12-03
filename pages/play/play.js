@@ -159,10 +159,10 @@ function checkAnswer() {
     score++;
     answer.value = "";
     modal.style.display = "none";
+    if (lvl > 5) {
+      endGameAndRedirect();
+    }
     createGame();
-  }
-  if (lvl > 5) {
-    location.href = "../score/score.html";
   }
 }
 
@@ -247,4 +247,5 @@ function createGame() {
     }
   }, 1000);
 }
+
 
